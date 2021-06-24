@@ -11,11 +11,9 @@ interface HTMLElementStyles {
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-
-
 export class AppComponent {
   title: string = 'theNewTitle'  ;
-    
+  
   titleStyle: HTMLElementStyles = {
     backgroundColor: 'red',
     color:'blue',
@@ -23,7 +21,7 @@ export class AppComponent {
   }
   theNumbers: number[] = [1,2,3]
   constructor () {}
-  
+
   addNumberToTheNumbers():void {
     const nextNumber = this.theNumbers.length+1;
     this.theNumbers.push(nextNumber);
